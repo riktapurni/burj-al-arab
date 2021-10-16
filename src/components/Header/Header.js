@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import header from '../../images/header.png';
 import logo from '../../images/icons/logo.png';
+//import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    //const {user} = useAuth();
     return (
         <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})` }} className="header">
             <nav className="nav">
@@ -18,6 +20,7 @@ const Header = () => {
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
+                    
                     <li>
                         <Link className="btn-book" to="/book">Book</Link>
                     </li>
